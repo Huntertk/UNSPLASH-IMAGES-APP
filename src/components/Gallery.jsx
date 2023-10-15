@@ -3,7 +3,6 @@ import axios from 'axios'
 import React from 'react'
 import { useAppContext } from '../context/AppContext'
 const url = 'https://api.unsplash.com/search/photos?client_id=CvJPMqp1MOGBbiW7MT7ifRgX7OO40_MXD3g9m9cdX2M&query=romance'
-console.log(import.meta.env.VITE_API_KEY);
 const Gallery = () => {
     const {searchTerm} = useAppContext()
     const {data, isLoading, isError} = useQuery({
